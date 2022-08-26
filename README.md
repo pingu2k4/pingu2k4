@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Pingu</h1>
 <h3 align="center">An all-round (full stack web, desktop, game, web3) developer from the UK</h3>
 
-<p align="center"><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=pingu2k4&theme=onedark" alt="pingu2k4" /></a></p>
+<p align="center"><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=pingu2k4&theme=onedark&column=7" alt="pingu2k4" /></a></p>
 
 <p align="left">The majority of my work is done in private repositories, so there's not an awful lot to look at here. Sorry! You can get to know a little bit about me beneath, or find ways to get in touch.</p>
 
