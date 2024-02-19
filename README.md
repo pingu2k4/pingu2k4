@@ -16,8 +16,7 @@
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 <a href="https://twitter.com/pingu2k4" target="blank"><img align="center" src="https://img.shields.io/badge/-Twitter-333?style=for-the-badge&logo=twitter" alt="pingu2k4" /></a>
-<a href="https://linkedin.com/in/pingu2k4" target="blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-333?style=for-the-badge&logo=linkedin
-" alt="pingu2k5" /></a>
+<a href="https://linkedin.com/in/pingu2k4" target="blank"><img align="center" src="https://img.shields.io/badge/-LinkedIn-333?style=for-the-badge&logo=linkedin" alt="pingu2k5" /></a>
 <a href="https://stackoverflow.com/users/1677045" target="blank"><img align="center" src="https://img.shields.io/badge/-Stack%20Overflow-333?style=for-the-badge&logo=stackoverflow" alt="1677045" /></a>
 <a href="mailto://contact@pinguapps.com" target="blank"><img align="center" src="https://img.shields.io/badge/-contact%40pinguapps.com-ea4335?style=for-the-badge&logo=gmail&labelColor=333" alt="1677045" /></a>
 </p>
