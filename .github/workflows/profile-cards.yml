@@ -1,0 +1,66 @@
+name: Update profile cards
+
+on:
+  schedule:
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+
+      - name: Generate personal GitHub stats
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
+        with:
+          card: stats
+          options: username=pingu2k4&theme=dark_github&title_color=EF4444&text_color=F1F1F3&icon_color=EF4444&bg_color=101014&border_color=352027&border_radius=10&show_icons=true&hide_rank=true&hide=contribs&show=reviews,contributions&role=OWNER,ORGANIZATION_MEMBER&custom_title=Pingu%20%7C%20GitHub%20activity&card_width=350&disable_animations=true
+          path: assets/cards/personal.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fail_on_error: "true"
+
+      - name: Generate contribution summary
+        uses: vn7n24fzkq/github-profile-summary-cards@e722eded97059b31d7e8ad3ae0267b74ff24172d
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: pingu2k4
+          AUTO_PUSH: false
+          THEME: github_dark
+          NAME: Pingu
+
+      - name: Apply contribution card colours
+        shell: pwsh
+        run: ./scripts/style-summary.ps1 -Source profile-summary-card-output/github_dark/0-profile-details.svg -Destination assets/cards/activity.svg
+
+      - name: Generate PinguApps summary
+        uses: vn7n24fzkq/github-profile-summary-cards@e722eded97059b31d7e8ad3ae0267b74ff24172d
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: PinguApps
+          AUTO_PUSH: false
+          THEME: github_dark
+
+      - name: Apply organisation card colours
+        shell: pwsh
+        run: ./scripts/style-summary.ps1 -Source profile-summary-card-output/github_dark/3-stats.svg -Destination assets/cards/pinguapps.svg
+
+      - name: Commit updated cards
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/cards/*.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "Update profile cards"
+            git push
+          fi
