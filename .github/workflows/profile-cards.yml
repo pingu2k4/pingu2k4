@@ -27,32 +27,25 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fail_on_error: "true"
 
-      - name: Generate contribution summary
-        uses: vn7n24fzkq/github-profile-summary-cards@e722eded97059b31d7e8ad3ae0267b74ff24172d
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: pingu2k4
-          AUTO_PUSH: false
-          THEME: github_dark
-          NAME: Pingu
+      - name: Fetch public Summary Cards
+        # User contribution queries need more access than GITHUB_TOKEN provides.
+        # Cache public API output here so profile views use committed SVGs.
+        shell: bash
+        run: |
+          curl --fail --show-error --silent --location --retry 3 --connect-timeout 15 --max-time 90 \
+            'https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pingu2k4&theme=github_dark&name=Pingu' \
+            --output "$RUNNER_TEMP/activity.svg"
+          curl --fail --show-error --silent --location --retry 3 --connect-timeout 15 --max-time 90 \
+            'https://github-profile-summary-cards.vercel.app/api/cards/stats?username=PinguApps&theme=github_dark' \
+            --output "$RUNNER_TEMP/pinguapps.svg"
 
       - name: Apply contribution card colours
         shell: pwsh
-        run: ./scripts/style-summary.ps1 -Source profile-summary-card-output/github_dark/0-profile-details.svg -Destination assets/cards/activity.svg
-
-      - name: Generate PinguApps summary
-        uses: vn7n24fzkq/github-profile-summary-cards@e722eded97059b31d7e8ad3ae0267b74ff24172d
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          USERNAME: PinguApps
-          AUTO_PUSH: false
-          THEME: github_dark
+        run: ./scripts/style-summary.ps1 -Source "$env:RUNNER_TEMP/activity.svg" -Destination assets/cards/activity.svg
 
       - name: Apply organisation card colours
         shell: pwsh
-        run: ./scripts/style-summary.ps1 -Source profile-summary-card-output/github_dark/3-stats.svg -Destination assets/cards/pinguapps.svg
+        run: ./scripts/style-summary.ps1 -Source "$env:RUNNER_TEMP/pinguapps.svg" -Destination assets/cards/pinguapps.svg
 
       - name: Commit updated cards
         shell: bash

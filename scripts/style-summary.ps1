@@ -11,7 +11,7 @@ if ($document.DocumentElement.LocalName -ne 'svg' -or $svg -match 'Something wen
     throw "Card generation failed: $Source"
 }
 
-# Colours from the pinned Summary Cards github_dark theme.
+# Colours from the Summary Cards github_dark theme.
 $colours = @{
     '#0366d6' = '#EF4444'
     '#77909c' = '#F1F1F3'

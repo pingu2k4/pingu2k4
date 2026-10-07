@@ -8,6 +8,6 @@
 - WPF and MAUI: custom window/device and wordmark artwork; not official product logos.
 - Header: custom SVG artwork for this profile.
 - Personal statistics: [GitHub Stats Extended](https://github.com/stats-organization/github-stats-extended), using its [official Action](https://github.com/stats-organization/github-readme-stats-action).
-- Contribution and organisation summaries: [GitHub Profile Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards).
+- Contribution and organisation summaries: [GitHub Profile Summary Cards](https://github.com/vn7n24fzkq/github-profile-summary-cards), fetched from its public API during daily updates. Failed refreshes retain the committed cards.
 
 Technology and project names and logos identify tools used; they do not imply endorsement.
