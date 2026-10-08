@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="232" viewBox="0 0 350 232" role="img" aria-labelledby="title desc">
   <title id="title">RazorStyle</title>
-  <desc id="desc">Predictable Blazor .razor markup. CLI, MSBuild and CI integration. 10 GitHub stars. 3,290 NuGet downloads across 2 packages.</desc>
+  <desc id="desc">BLAZOR TOOLING. Predictable Blazor .razor markup. CLI, MSBuild and CI integration. 10 GitHub stars. 3,290 NuGet downloads across 2 packages.</desc>
   <rect x="0.5" y="0.5" width="349" height="231" rx="12" fill="#101014" stroke="#352027"/>
   <path d="M13 1h324" stroke="#EF4444" stroke-width="2"/>
   <g font-family="Segoe UI,Arial,sans-serif">

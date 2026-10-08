@@ -14,7 +14,7 @@ New-Item -ItemType Directory -Path $output -Force | Out-Null
 
 foreach ($project in $projects) {
     $repo = Invoke-RestMethod -Headers $headers -Uri ('https://api.github.com/repos/PinguApps/' + $project.repo) -TimeoutSec 30
-    if ($repo.archived -or $repo.private -or $null -eq $repo.stargazers_count) { throw "Invalid featured repo: $($project.repo)" }
+    if (($repo.archived -and !$project.allowArchived) -or $repo.private -or $null -eq $repo.stargazers_count) { throw "Invalid featured repo: $($project.repo)" }
     $downloads = [long]0
     foreach ($id in $project.packages) {
         $package = @($nuget.data | Where-Object { $_.id -eq $id })
@@ -22,6 +22,9 @@ foreach ($project in $projects) {
         $downloads += [long]$package[0].totalDownloads
     }
     $title = [Security.SecurityElement]::Escape($project.title)
+    $category = $project.category
+    if ($repo.archived) { $category += " $([char]0x00B7) ARCHIVED" }
+    $category = [Security.SecurityElement]::Escape($category)
     $subtitle = [Security.SecurityElement]::Escape($project.subtitle)
     $lineOne = [Security.SecurityElement]::Escape($project.lines[0])
     $lineTwo = [Security.SecurityElement]::Escape($project.lines[1])
@@ -31,12 +34,12 @@ foreach ($project in $projects) {
     $svg = @"
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="232" viewBox="0 0 350 232" role="img" aria-labelledby="title desc">
   <title id="title">$title</title>
-  <desc id="desc">$lineOne $lineTwo $stars GitHub stars. $total NuGet downloads across $packageLabel.</desc>
+  <desc id="desc">$category. $lineOne $lineTwo $stars GitHub stars. $total NuGet downloads across $packageLabel.</desc>
   <rect x="0.5" y="0.5" width="349" height="231" rx="12" fill="#101014" stroke="#352027"/>
   <path d="M13 1h324" stroke="#EF4444" stroke-width="2"/>
   <g font-family="Segoe UI,Arial,sans-serif">
     <circle cx="24" cy="26" r="3" fill="#EF4444"/>
-    <text x="35" y="30" font-size="10" font-weight="700" letter-spacing="1.2" fill="#EF4444">$($project.category)</text>
+    <text x="35" y="30" font-size="10" font-weight="700" letter-spacing="1.2" fill="#EF4444">$category</text>
     <path d="M318 22h10v10m0-10-12 12" fill="none" stroke="#A4A4AE" stroke-width="1.5"/>
     <text x="22" y="62" font-size="24" font-weight="700" fill="#F1F1F3">$title</text>
     <text x="22" y="82" font-size="12" fill="#A4A4AE">$subtitle</text>

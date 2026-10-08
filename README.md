@@ -22,7 +22,7 @@ I'm Matthew, better known as **Pingu** — a .NET engineer and founder based in 
 
 ## Open source through PinguApps
 
-I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**, where most of my open-source work lives. These are some of the projects I build and maintain.
+I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**, where most of my open-source work lives. These projects reflect my work in Blazor and the wider .NET ecosystem.
 
 ### Blazor tools
 
@@ -31,17 +31,20 @@ I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**,
   <a href="https://github.com/PinguApps/BlazorSitemap"><img src="assets/projects/blazorsitemap.svg" width="350" alt="BlazorSitemap — XML sitemaps from Razor routes, with GitHub stars and NuGet downloads" /></a>
 </p>
 
-### Aspire integrations
+### Components & integrations
 
-Familiar local development, with a path to hosted services through `aspire deploy`.
+Reusable Blazor components and Aspire integrations for hosted services.
 
 <p>
   <a href="https://github.com/PinguApps/Aspire.Hosting.Upstash.Redis"><img src="assets/projects/upstash-redis.svg" width="350" alt="Aspire.Hosting.Upstash.Redis — local Redis and hosted Upstash, with GitHub stars and NuGet downloads" /></a>
   <a href="https://github.com/PinguApps/Aspire.Hosting.Railway"><img src="assets/projects/railway.svg" width="350" alt="Aspire.Hosting.Railway — deploy Aspire projects and containers, with GitHub stars and NuGet downloads" /></a>
 </p>
-<p align="center">
+<p>
   <a href="https://github.com/PinguApps/Aspire.Hosting.Bunny.Storage"><img src="assets/projects/bunny-storage.svg" width="350" alt="Aspire.Hosting.Bunny.Storage — Azurite locally and Bunny Storage in production, with GitHub stars and NuGet downloads" /></a>
+  <a href="https://github.com/PinguApps/Blazor.QRCode"><img src="assets/projects/blazor-qrcode.svg" width="350" alt="Blazor.QRCode — archived; server-rendered SVG QR codes for Blazor Identity 2FA, with GitHub stars and NuGet downloads" /></a>
 </p>
+
+**Blazor.QRCode** renders SVG QR codes on the server, including static SSR and prerendering. It fits the built-in Blazor Identity authenticator setup pages without JavaScript. The repository is **archived**.
 
 <sub>Updated daily. NuGet totals combine the packages published from each repo.</sub>
 
@@ -53,6 +56,7 @@ Familiar local development, with a path to hosted services through `aspire deplo
 - **Upstash Redis:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Upstash.Redis/).
 - **Railway:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Railway/).
 - **Bunny Storage:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Bunny.Storage/) and [runtime library](https://www.nuget.org/packages/PinguApps.Bunny.Storage/).
+- **Blazor.QRCode:** [Blazor component](https://www.nuget.org/packages/PinguApps.Blazor.QRCode/).
 
 </details>
 

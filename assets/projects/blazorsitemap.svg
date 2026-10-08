@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="232" viewBox="0 0 350 232" role="img" aria-labelledby="title desc">
   <title id="title">BlazorSitemap</title>
-  <desc id="desc">XML sitemaps from your Razor routes. Dynamic pages, locales and large sites. 0 GitHub stars. 0 NuGet downloads across 2 packages.</desc>
+  <desc id="desc">BLAZOR TOOLING. XML sitemaps from your Razor routes. Dynamic pages, locales and large sites. 1 GitHub stars. 0 NuGet downloads across 2 packages.</desc>
   <rect x="0.5" y="0.5" width="349" height="231" rx="12" fill="#101014" stroke="#352027"/>
   <path d="M13 1h324" stroke="#EF4444" stroke-width="2"/>
   <g font-family="Segoe UI,Arial,sans-serif">
@@ -14,7 +14,7 @@
     <path d="M22 153h306" stroke="#352027"/>
     <path d="m29 173 2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8Z" fill="none" stroke="#EF4444" stroke-width="1.5"/>
     <path d="M182 173v11m-4-4 4 4 4-4m-10 8v3h12v-3" fill="none" stroke="#EF4444" stroke-width="1.5"/>
-    <text x="46" y="187" font-size="22" font-weight="700" fill="#F1F1F3">0</text>
+    <text x="46" y="187" font-size="22" font-weight="700" fill="#F1F1F3">1</text>
     <text x="199" y="187" font-size="22" font-weight="700" fill="#F1F1F3">0</text>
     <text x="46" y="206" font-size="11" fill="#A4A4AE">GitHub stars</text>
     <text x="199" y="206" font-size="11" fill="#A4A4AE">NuGet downloads</text>

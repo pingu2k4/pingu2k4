@@ -71,5 +71,20 @@
       "PinguApps.Aspire.Hosting.Bunny.Storage",
       "PinguApps.Bunny.Storage"
     ]
+  },
+  {
+    "repo": "Blazor.QRCode",
+    "file": "blazor-qrcode",
+    "title": "Blazor.QRCode",
+    "category": "BLAZOR COMPONENT",
+    "subtitle": "Static SSR + Identity 2FA",
+    "lines": [
+      "Server-rendered SVG QR codes.",
+      "Blazor Identity 2FA. No JavaScript."
+    ],
+    "packages": [
+      "PinguApps.Blazor.QRCode"
+    ],
+    "allowArchived": true
   }
 ]
