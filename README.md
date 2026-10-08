@@ -62,11 +62,11 @@ Reusable Blazor components and Aspire integrations for hosted services.
 
 ## AI-native development
 
-AI is central to my day-to-day engineering. I use **Claude, Codex and T3 Code** heavily to explore designs, implement scoped changes and review work. I define the architecture and constraints, give agents clear context, inspect the diffs and verify behaviour with tests and CI. I own the code that ships.
+AI is central to my day-to-day engineering. I use **Codex, Claude and T3 Code** heavily to explore designs, implement scoped changes and review work. I define the architecture and constraints, give agents clear context, inspect the diffs and verify behaviour with tests and CI. I own the code that ships.
 
 <p>
-  <a href="https://claude.ai/"><img src="assets/skills/claude.svg" width="48" height="48" title="Claude" alt="Claude" /></a>
   <a href="https://openai.com/codex/"><img src="assets/skills/codex.svg" width="48" height="48" title="Codex" alt="Codex" /></a>
+  <a href="https://claude.ai/"><img src="assets/skills/claude.svg" width="48" height="48" title="Claude" alt="Claude" /></a>
   <a href="https://t3.codes/"><img src="assets/skills/t3code.svg" width="48" height="48" title="T3 Code" alt="T3 Code" /></a>
 </p>
 
@@ -111,7 +111,7 @@ AI is central to my day-to-day engineering. I use **Claude, Codex and T3 Code** 
 
 My public activity spans this profile and PinguApps. Much of my professional work is in private repositories or Azure DevOps, so these cards show only part of what I build.
 
-<p>
+<p align="center">
   <img src="assets/cards/personal.svg" width="350" alt="Pingu's public GitHub activity, including repositories where I am an organisation member" />
   <img src="assets/cards/pinguapps.svg" width="350" alt="PinguApps public repository statistics" />
 </p>
