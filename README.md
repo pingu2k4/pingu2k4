@@ -26,7 +26,7 @@ I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**,
 
 ### Blazor tools
 
-<p>
+<p align="center">
   <a href="https://github.com/PinguApps/RazorStyle"><img src="assets/projects/razorstyle.svg" width="350" alt="RazorStyle — Blazor formatter and linter, with GitHub stars and NuGet downloads" /></a>
   <a href="https://github.com/PinguApps/BlazorSitemap"><img src="assets/projects/blazorsitemap.svg" width="350" alt="BlazorSitemap — XML sitemaps from Razor routes, with GitHub stars and NuGet downloads" /></a>
 </p>
@@ -35,11 +35,11 @@ I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**,
 
 Reusable Blazor components and Aspire integrations for hosted services.
 
-<p>
+<p align="center">
   <a href="https://github.com/PinguApps/Aspire.Hosting.Upstash.Redis"><img src="assets/projects/upstash-redis.svg" width="350" alt="Aspire.Hosting.Upstash.Redis — local Redis and hosted Upstash, with GitHub stars and NuGet downloads" /></a>
   <a href="https://github.com/PinguApps/Aspire.Hosting.Railway"><img src="assets/projects/railway.svg" width="350" alt="Aspire.Hosting.Railway — deploy Aspire projects and containers, with GitHub stars and NuGet downloads" /></a>
 </p>
-<p>
+<p align="center">
   <a href="https://github.com/PinguApps/Aspire.Hosting.Bunny.Storage"><img src="assets/projects/bunny-storage.svg" width="350" alt="Aspire.Hosting.Bunny.Storage — Azurite locally and Bunny Storage in production, with GitHub stars and NuGet downloads" /></a>
   <a href="https://github.com/PinguApps/Blazor.QRCode"><img src="assets/projects/blazor-qrcode.svg" width="350" alt="Blazor.QRCode — archived; server-rendered SVG QR codes for Blazor Identity 2FA, with GitHub stars and NuGet downloads" /></a>
 </p>
