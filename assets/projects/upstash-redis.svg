@@ -1,23 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="350" height="232" viewBox="0 0 350 232" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="240" viewBox="0 0 350 240" role="img" aria-labelledby="title desc">
   <title id="title">Upstash Redis</title>
   <desc id="desc">ASPIRE INTEGRATION. Local Redis. Hosted on Upstash. Publish through aspire deploy. 3 GitHub stars. 1,147 NuGet downloads across 1 package.</desc>
-  <rect x="0.5" y="0.5" width="349" height="231" rx="12" fill="#101014" stroke="#352027"/>
-  <path d="M13 1h324" stroke="#EF4444" stroke-width="2"/>
+  <rect x="0.5" y="0.5" width="349" height="239" rx="12" fill="#0E0D12" stroke="#4C1D2D"/>
+  <path d="M12.5 .5A12 12 0 0 0 .5 12.5V227.5A12 12 0 0 0 12.5 239.5C8.5 239.5 6.5 234 6.5 227.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#DC143C"/>
   <g font-family="Segoe UI,Arial,sans-serif">
-    <circle cx="24" cy="26" r="3" fill="#EF4444"/>
-    <text x="35" y="30" font-size="10" font-weight="700" letter-spacing="1.2" fill="#EF4444">ASPIRE INTEGRATION</text>
-    <path d="M318 22h10v10m0-10-12 12" fill="none" stroke="#A4A4AE" stroke-width="1.5"/>
-    <text x="22" y="62" font-size="24" font-weight="700" fill="#F1F1F3">Upstash Redis</text>
-    <text x="22" y="82" font-size="12" fill="#A4A4AE">Aspire.Hosting.Upstash.Redis</text>
-    <text x="22" y="113" font-size="14" fill="#D1D1D9">Local Redis. Hosted on Upstash.</text>
-    <text x="22" y="134" font-size="14" fill="#D1D1D9">Publish through aspire deploy.</text>
-    <path d="M22 153h306" stroke="#352027"/>
-    <path d="m29 173 2.5 5 5.5.8-4 3.9.9 5.5-4.9-2.6-4.9 2.6.9-5.5-4-3.9 5.5-.8Z" fill="none" stroke="#EF4444" stroke-width="1.5"/>
-    <path d="M182 173v11m-4-4 4 4 4-4m-10 8v3h12v-3" fill="none" stroke="#EF4444" stroke-width="1.5"/>
-    <text x="46" y="187" font-size="22" font-weight="700" fill="#F1F1F3">3</text>
-    <text x="199" y="187" font-size="22" font-weight="700" fill="#F1F1F3">1,147</text>
-    <text x="46" y="206" font-size="11" fill="#A4A4AE">GitHub stars</text>
-    <text x="199" y="206" font-size="11" fill="#A4A4AE">NuGet downloads</text>
-    <text x="199" y="222" font-size="10" fill="#A4A4AE">1 package</text>
+    <rect x="21" y="18" width="273" height="22" rx="5" fill="#2A101B"/>
+    <text x="31" y="33" font-size="9" font-weight="700" letter-spacing=".8" fill="#FF6280">ASPIRE INTEGRATION</text>
+    <path d="M318 23h9v9m0-9-11 11" fill="none" stroke="#FF6280" stroke-width="1.4"/>
+    <text x="22" y="76" font-size="30" font-weight="700" fill="#F4F1F5">Upstash Redis</text>
+    <text x="22" y="98" font-size="12" fill="#B4ABB5">Aspire.Hosting.Upstash.Redis</text>
+    <text x="22" y="126" font-size="14" fill="#F4F1F5">Local Redis. Hosted on Upstash.</text>
+    <text x="22" y="147" font-size="14" fill="#F4F1F5">Publish through aspire deploy.</text>
+    <rect x="22" y="165" width="132" height="57" rx="7" fill="#19131C"/>
+    <rect x="166" y="165" width="162" height="57" rx="7" fill="#19131C"/>
+    <path d="m40 180 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L33 185.2l5-.7Z" fill="none" stroke="#FF6280" stroke-width="1.4"/>
+    <path d="M184 180v10m-4-4 4 4 4-4M177 192v3h14v-3" fill="none" stroke="#FF6280" stroke-width="1.4"/>
+    <text x="55" y="194" font-size="21" font-weight="700" fill="#F4F1F5">3</text>
+    <text x="199" y="194" font-size="21" font-weight="700" fill="#F4F1F5">1,147</text>
+    <text x="33" y="212" font-size="10" fill="#B4ABB5">GitHub stars</text>
+    <text x="177" y="212" font-size="9" fill="#B4ABB5">NuGet downloads · 1 package</text>
   </g>
 </svg>
