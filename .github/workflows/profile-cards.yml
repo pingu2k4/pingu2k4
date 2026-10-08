@@ -18,47 +18,28 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
-      - name: Generate personal GitHub stats
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
-        with:
-          card: stats
-          options: username=pingu2k4&theme=dark_github&title_color=EF4444&text_color=F1F1F3&icon_color=EF4444&bg_color=101014&border_color=352027&border_radius=10&show_icons=true&hide_rank=true&hide=contribs&show=reviews,contributions&role=OWNER,ORGANIZATION_MEMBER&custom_title=Pingu%20%7C%20GitHub%20activity&card_width=350&disable_animations=true
-          path: assets/cards/personal.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fail_on_error: "true"
-
-      - name: Fetch public Summary Cards
-        # User contribution queries need more access than GITHUB_TOKEN provides.
-        # Cache public API output here so profile views use committed SVGs.
-        shell: bash
-        run: |
-          curl --fail --show-error --silent --location --retry 3 --connect-timeout 15 --max-time 90 \
-            'https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=pingu2k4&theme=github_dark&name=Pingu' \
-            --output "$RUNNER_TEMP/activity.svg"
-          curl --fail --show-error --silent --location --retry 3 --connect-timeout 15 --max-time 90 \
-            'https://github-profile-summary-cards.vercel.app/api/cards/stats?username=PinguApps&theme=github_dark' \
-            --output "$RUNNER_TEMP/pinguapps.svg"
-
-      - name: Apply contribution card colours
+      - name: Fetch complete NuGet gallery totals
         shell: pwsh
-        run: ./scripts/style-summary.ps1 -Source "$env:RUNNER_TEMP/activity.svg" -Destination assets/cards/activity.svg
+        run: ./scripts/get-nuget-stats.ps1 -Destination "$env:RUNNER_TEMP/nuget.json"
 
-      - name: Apply organisation card colours
+      - name: Refresh authenticated activity cards
         shell: pwsh
-        run: ./scripts/style-summary.ps1 -Source "$env:RUNNER_TEMP/pinguapps.svg" -Destination assets/cards/pinguapps.svg
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+        run: ./scripts/update-activity-cards.ps1 -NuGetStatsPath "$env:RUNNER_TEMP/nuget.json"
 
       - name: Refresh featured project cards
         shell: pwsh
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: ./scripts/update-project-cards.ps1
+        run: ./scripts/update-project-cards.ps1 -NuGetStatsPath "$env:RUNNER_TEMP/nuget.json"
 
       - name: Commit updated cards
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/cards/*.svg assets/projects/*.svg
+          git add assets/cards/*.svg assets/projects/*.svg scripts/activity-calendar.json README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update profile cards"
             git push

@@ -1,13 +1,12 @@
+param([Parameter(Mandatory)][string]$NuGetStatsPath)
+
 $ErrorActionPreference = 'Stop'
 $root = Split-Path $PSScriptRoot -Parent
 $projects = Get-Content -Raw -Encoding UTF8 -LiteralPath "$PSScriptRoot/projects.json" | ConvertFrom-Json
 $headers = @{ 'User-Agent' = 'Pingu-profile-cards'; Accept = 'application/vnd.github+json' }
 if ($env:GH_TOKEN) { $headers.Authorization = 'Bearer ' + $env:GH_TOKEN }
 
-$index = Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' -TimeoutSec 30
-$searchUrl = ($index.resources | Where-Object { $_.'@type' -eq 'SearchQueryService/3.5.0' } | Select-Object -First 1).'@id'
-if (!$searchUrl) { throw 'NuGet search service was not found.' }
-$nuget = Invoke-RestMethod -Uri ($searchUrl + '?q=PinguApps&take=1000&prerelease=true&semVerLevel=2.0.0') -TimeoutSec 60
+$nuget = Get-Content -Raw -Encoding UTF8 -LiteralPath $NuGetStatsPath | ConvertFrom-Json
 $culture = [Globalization.CultureInfo]::GetCultureInfo('en-GB')
 $output = Join-Path $root 'assets/projects'
 New-Item -ItemType Directory -Path $output -Force | Out-Null
@@ -17,9 +16,9 @@ foreach ($project in $projects) {
     if (($repo.archived -and !$project.allowArchived) -or $repo.private -or $null -eq $repo.stargazers_count) { throw "Invalid featured repo: $($project.repo)" }
     $downloads = [long]0
     foreach ($id in $project.packages) {
-        $package = @($nuget.data | Where-Object { $_.id -eq $id })
-        if ($package.Count -ne 1 -or $null -eq $package[0].totalDownloads) { throw "NuGet download data missing: $id" }
-        $downloads += [long]$package[0].totalDownloads
+        $package = @($nuget.packages | Where-Object { $_.id -eq $id })
+        if ($package.Count -ne 1 -or $null -eq $package[0].downloads) { throw "NuGet download data missing: $id" }
+        $downloads += [long]$package[0].downloads
     }
     $title = [Security.SecurityElement]::Escape($project.title)
     $category = $project.category

@@ -109,16 +109,30 @@ AI is central to my day-to-day engineering. I use **Codex, Claude and T3 Code** 
 
 ## GitHub activity
 
-My public activity spans this profile and PinguApps. Much of my professional work is in private repositories or Azure DevOps, so these cards show only part of what I build.
+Activity across my profile and PinguApps, including private GitHub contributions. Work hosted on Azure DevOps isn't included.
 
 <p align="center">
-  <img src="assets/cards/personal.svg" width="350" alt="Pingu's public GitHub activity, including repositories where I am an organisation member" />
-  <img src="assets/cards/pinguapps.svg" width="350" alt="PinguApps public repository statistics" />
+  <picture>
+    <source media="(max-width: 520px)" srcset="assets/cards/combined-weekly-mobile.svg" />
+    <img src="assets/cards/combined-weekly.svg" width="700" alt="Pingu and PinguApps: account and repository statistics, with weekly contribution history including private activity" />
+  </picture>
 </p>
 
-<p>
-  <img src="assets/cards/activity.svg" width="100%" alt="Pingu's GitHub contribution history" />
+<p align="center">
+  <picture>
+    <source media="(max-width: 520px)" srcset="assets/cards/adoption-mobile.svg" />
+    <img src="assets/cards/adoption.svg" width="700" alt="Library adoption: total NuGet downloads across all my packages, published package count and active PinguApps repositories" />
+  </picture>
 </p>
+
+<p align="center">
+  <picture>
+    <source media="(max-width: 520px)" srcset="assets/cards/highlights-mobile.svg" />
+    <img src="assets/cards/highlights.svg" width="700" alt="Activity highlights: busiest day, complete week and month, plus contributions over the last 30 complete days" />
+  </picture>
+</p>
+
+Calendar snapshot: 8 October 2026. Account, repository and package statistics refresh daily.
 
 ## Get in touch
 
