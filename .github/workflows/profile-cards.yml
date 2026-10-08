@@ -47,12 +47,18 @@ jobs:
         shell: pwsh
         run: ./scripts/style-summary.ps1 -Source "$env:RUNNER_TEMP/pinguapps.svg" -Destination assets/cards/pinguapps.svg
 
+      - name: Refresh featured project cards
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: ./scripts/update-project-cards.ps1
+
       - name: Commit updated cards
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/cards/*.svg
+          git add assets/cards/*.svg assets/projects/*.svg
           if ! git diff --cached --quiet; then
             git commit -m "Update profile cards"
             git push

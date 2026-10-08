@@ -24,21 +24,47 @@ I'm Matthew, better known as **Pingu** — a .NET engineer and founder based in 
 
 I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**, where most of my open-source work lives. These are some of the projects I build and maintain.
 
-### [RazorStyle](https://github.com/PinguApps/RazorStyle)
+### Blazor tools
 
-A formatter and linter built specifically for Blazor `.razor` files. It keeps component markup and attribute ordering consistent, with a .NET CLI and MSBuild integration for local development and CI.
-
-### [BlazorSitemap](https://github.com/PinguApps/BlazorSitemap)
-
-Sitemaps generated from your existing Razor routes. Supports dynamic, database-backed pages, localisation, modification dates and large sitemaps in server-hosted Blazor applications.
+<p>
+  <a href="https://github.com/PinguApps/RazorStyle"><img src="assets/projects/razorstyle.svg" width="350" alt="RazorStyle — Blazor formatter and linter, with GitHub stars and NuGet downloads" /></a>
+  <a href="https://github.com/PinguApps/BlazorSitemap"><img src="assets/projects/blazorsitemap.svg" width="350" alt="BlazorSitemap — XML sitemaps from Razor routes, with GitHub stars and NuGet downloads" /></a>
+</p>
 
 ### Aspire integrations
 
-I also build integrations that keep local Aspire development familiar while connecting applications to hosted services.
+Familiar local development, with a path to hosted services through `aspire deploy`.
 
-- **[Aspire.Hosting.Upstash.Redis](https://github.com/PinguApps/Aspire.Hosting.Upstash.Redis)** — deploy standard Aspire Redis resources to Upstash.
-- **[Aspire.Hosting.Railway](https://github.com/PinguApps/Aspire.Hosting.Railway)** — deploy Aspire projects and containers to Railway.
-- **[Aspire.Hosting.Bunny.Storage](https://github.com/PinguApps/Aspire.Hosting.Bunny.Storage)** — use Azurite locally and Bunny Storage in production, with a shared object-storage abstraction.
+<p>
+  <a href="https://github.com/PinguApps/Aspire.Hosting.Upstash.Redis"><img src="assets/projects/upstash-redis.svg" width="350" alt="Aspire.Hosting.Upstash.Redis — local Redis and hosted Upstash, with GitHub stars and NuGet downloads" /></a>
+  <a href="https://github.com/PinguApps/Aspire.Hosting.Railway"><img src="assets/projects/railway.svg" width="350" alt="Aspire.Hosting.Railway — deploy Aspire projects and containers, with GitHub stars and NuGet downloads" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/PinguApps/Aspire.Hosting.Bunny.Storage"><img src="assets/projects/bunny-storage.svg" width="350" alt="Aspire.Hosting.Bunny.Storage — Azurite locally and Bunny Storage in production, with GitHub stars and NuGet downloads" /></a>
+</p>
+
+<sub>Updated daily. NuGet totals combine the packages published from each repo.</sub>
+
+<details>
+<summary>NuGet packages behind the cards</summary>
+
+- **RazorStyle:** [build integration](https://www.nuget.org/packages/PinguApps.RazorStyle/) and [CLI](https://www.nuget.org/packages/PinguApps.RazorStyle.Cli/).
+- **BlazorSitemap:** [library](https://www.nuget.org/packages/PinguApps.BlazorSitemap/) and [abstractions](https://www.nuget.org/packages/PinguApps.BlazorSitemap.Abstractions/).
+- **Upstash Redis:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Upstash.Redis/).
+- **Railway:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Railway/).
+- **Bunny Storage:** [hosting integration](https://www.nuget.org/packages/PinguApps.Aspire.Hosting.Bunny.Storage/) and [runtime library](https://www.nuget.org/packages/PinguApps.Bunny.Storage/).
+
+</details>
+
+## AI-native development
+
+AI is central to my day-to-day engineering. I use **Claude, Codex and T3 Code** heavily to explore designs, implement scoped changes and review work. I define the architecture and constraints, give agents clear context, inspect the diffs and verify behaviour with tests and CI. I own the code that ships.
+
+<p>
+  <a href="https://claude.ai/"><img src="assets/skills/claude.svg" width="48" height="48" title="Claude" alt="Claude" /></a>
+  <a href="https://openai.com/codex/"><img src="assets/skills/codex.svg" width="48" height="48" title="Codex" alt="Codex" /></a>
+  <a href="https://t3.codes/"><img src="assets/skills/t3code.svg" width="48" height="48" title="T3 Code" alt="T3 Code" /></a>
+</p>
 
 ## My stack
 
@@ -94,6 +120,6 @@ My public activity spans this profile and PinguApps. Much of my professional wor
 
 Happy to talk about **Blazor, .NET, Azure or the projects above**.
 
-[Email](mailto:contact@pinguapps.com) · [LinkedIn](https://www.linkedin.com/in/pingu2k4/) · [X](https://x.com/pingu2k4) · [Stack Overflow](https://stackoverflow.com/users/1677045) · [CV](https://pinguapps.blob.core.windows.net/personal/Matthew%20Parker.pdf)
+[Email](mailto:contact@pinguapps.com) · [LinkedIn](https://www.linkedin.com/in/pingu2k4/) · [X](https://x.com/pingu2k4)
 
 <!-- Card sources and icon attribution: ASSET-SOURCES.md. SVGs update through .github/workflows/profile-cards.yml. -->

@@ -1,0 +1,75 @@
+[
+  {
+    "repo": "RazorStyle",
+    "file": "razorstyle",
+    "title": "RazorStyle",
+    "category": "BLAZOR TOOLING",
+    "subtitle": "Formatter + linter",
+    "lines": [
+      "Predictable Blazor .razor markup.",
+      "CLI, MSBuild and CI integration."
+    ],
+    "packages": [
+      "PinguApps.RazorStyle",
+      "PinguApps.RazorStyle.Cli"
+    ]
+  },
+  {
+    "repo": "BlazorSitemap",
+    "file": "blazorsitemap",
+    "title": "BlazorSitemap",
+    "category": "BLAZOR TOOLING",
+    "subtitle": "Routing + discoverability",
+    "lines": [
+      "XML sitemaps from your Razor routes.",
+      "Dynamic pages, locales and large sites."
+    ],
+    "packages": [
+      "PinguApps.BlazorSitemap",
+      "PinguApps.BlazorSitemap.Abstractions"
+    ]
+  },
+  {
+    "repo": "Aspire.Hosting.Upstash.Redis",
+    "file": "upstash-redis",
+    "title": "Upstash Redis",
+    "category": "ASPIRE INTEGRATION",
+    "subtitle": "Aspire.Hosting.Upstash.Redis",
+    "lines": [
+      "Local Redis. Hosted on Upstash.",
+      "Publish through aspire deploy."
+    ],
+    "packages": [
+      "PinguApps.Aspire.Hosting.Upstash.Redis"
+    ]
+  },
+  {
+    "repo": "Aspire.Hosting.Railway",
+    "file": "railway",
+    "title": "Railway Deployments",
+    "category": "ASPIRE INTEGRATION",
+    "subtitle": "Aspire.Hosting.Railway",
+    "lines": [
+      "Deploy Aspire projects and containers.",
+      "Keep your local development familiar."
+    ],
+    "packages": [
+      "PinguApps.Aspire.Hosting.Railway"
+    ]
+  },
+  {
+    "repo": "Aspire.Hosting.Bunny.Storage",
+    "file": "bunny-storage",
+    "title": "Bunny Storage",
+    "category": "ASPIRE INTEGRATION",
+    "subtitle": "Aspire.Hosting.Bunny.Storage",
+    "lines": [
+      "Azurite locally. Bunny in production.",
+      "One object-storage abstraction."
+    ],
+    "packages": [
+      "PinguApps.Aspire.Hosting.Bunny.Storage",
+      "PinguApps.Bunny.Storage"
+    ]
+  }
+]
