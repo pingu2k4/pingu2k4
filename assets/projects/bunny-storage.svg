@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="350" height="240" viewBox="0 0 350 240" role="img" aria-labelledby="title desc">
   <title id="title">Bunny Storage</title>
-  <desc id="desc">ASPIRE INTEGRATION. Azurite locally. Bunny in production. One object-storage abstraction. 1 GitHub stars. 3,198 NuGet downloads across 2 packages.</desc>
+  <desc id="desc">ASPIRE INTEGRATION. Azurite locally. Bunny in production. One object-storage abstraction. 1 GitHub stars. 3,245 NuGet downloads across 2 packages.</desc>
   <rect x="0.5" y="0.5" width="349" height="239" rx="12" fill="#101014" stroke="#352027"/>
   <path d="M12.5 .5A12 12 0 0 0 .5 12.5V227.5A12 12 0 0 0 12.5 239.5C8.5 239.5 6.5 234 6.5 227.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="Segoe UI,Arial,sans-serif">
@@ -16,7 +16,7 @@
     <path d="m40 180 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L33 185.2l5-.7Z" fill="none" stroke="#EF4444" stroke-width="1.4"/>
     <path d="M184 180v10m-4-4 4 4 4-4M177 192v3h14v-3" fill="none" stroke="#EF4444" stroke-width="1.4"/>
     <text x="55" y="194" font-size="21" font-weight="700" fill="#F1F1F3">1</text>
-    <text x="199" y="194" font-size="21" font-weight="700" fill="#F1F1F3">3,198</text>
+    <text x="199" y="194" font-size="21" font-weight="700" fill="#F1F1F3">3,245</text>
     <text x="33" y="212" font-size="10" fill="#A4A4AE">GitHub stars</text>
     <text x="177" y="212" font-size="9" fill="#A4A4AE">NuGet downloads · 2 packages</text>
   </g>
