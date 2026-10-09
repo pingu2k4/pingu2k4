@@ -3,6 +3,7 @@ name: Update profile cards
 on:
   schedule:
     - cron: "17 3 * * *"
+    - cron: "43 6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -18,11 +19,25 @@ jobs:
     steps:
       - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
+      - name: Report refresh trigger
+        shell: pwsh
+        env:
+          REFRESH_EVENT: ${{ github.event_name }}
+          REFRESH_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          $message = "Trigger: $env:REFRESH_EVENT; cron: $env:REFRESH_SCHEDULE; started: $([DateTime]::UtcNow.ToString('o')). Scheduled times are UTC; GitHub may delay delivery."
+          Write-Output $message
+          Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY -Value $message
+
+      - name: Verify profile card generation
+        shell: pwsh
+        run: ./scripts/test-profile-cards.ps1
+
       - name: Fetch complete NuGet gallery totals
         shell: pwsh
         run: ./scripts/get-nuget-stats.ps1 -Destination "$env:RUNNER_TEMP/nuget.json"
 
-      - name: Refresh authenticated activity cards
+      - name: Refresh activity cards
         shell: pwsh
         env:
           GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
