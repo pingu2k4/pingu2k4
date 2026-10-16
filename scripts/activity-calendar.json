@@ -1,13 +1,9 @@
 {
   "source": "Live GitHub profile calendars, including publicly shared private contribution counts",
-  "capturedAt": "2026-10-15T08:20:29.7220949Z",
-  "start": "2025-10-16",
-  "end": "2026-10-15",
+  "capturedAt": "2026-10-16T08:13:06.7856020Z",
+  "start": "2025-10-17",
+  "end": "2026-10-16",
   "days": [
-    {
-      "date": "2025-10-16",
-      "count": 5
-    },
     {
       "date": "2025-10-17",
       "count": 23
@@ -1462,10 +1458,14 @@
     },
     {
       "date": "2026-10-15",
-      "count": 42
+      "count": 55
+    },
+    {
+      "date": "2026-10-16",
+      "count": 2
     }
   ],
-  "annual": 5125,
+  "annual": 5135,
   "years": {
     "2015": 3,
     "2016": 3,
@@ -1478,8 +1478,8 @@
     "2023": 934,
     "2024": 4460,
     "2025": 3563,
-    "2026": 4514
+    "2026": 4529
   },
-  "lifetime": 14995,
+  "lifetime": 15010,
   "automationVerified": true
 }
