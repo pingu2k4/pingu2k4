@@ -40,7 +40,8 @@ jobs:
       - name: Refresh activity cards
         shell: pwsh
         env:
-          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+          PROFILE_STATS_APP_ID: ${{ vars.PROFILE_STATS_APP_ID }}
+          PROFILE_STATS_APP_PRIVATE_KEY: ${{ secrets.PROFILE_STATS_APP_PRIVATE_KEY }}
         run: ./scripts/update-activity-cards.ps1 -NuGetStatsPath "$env:RUNNER_TEMP/nuget.json"
 
       - name: Refresh featured project cards

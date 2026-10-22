@@ -1,50 +1,20 @@
 param([Parameter(Mandatory)][string]$NuGetStatsPath)
 
 $ErrorActionPreference = 'Stop'
-if (!$env:GH_TOKEN) { throw 'PROFILE_STATS_TOKEN is required for account and repository statistics.' }
+if (!$env:PROFILE_STATS_APP_ID -or !$env:PROFILE_STATS_APP_PRIVATE_KEY) { throw 'PROFILE_STATS_APP_ID and PROFILE_STATS_APP_PRIVATE_KEY are required for GitHub App statistics.' }
 $root = Split-Path $PSScriptRoot -Parent
 $output = Join-Path $root 'assets/cards'
 $calendarPath = Join-Path $PSScriptRoot 'activity-calendar.json'
 . (Join-Path $PSScriptRoot 'contribution-calendar.ps1')
+. (Join-Path $PSScriptRoot 'github-statistics.ps1')
 $nuget = Get-Content -Raw -Encoding UTF8 -LiteralPath $NuGetStatsPath | ConvertFrom-Json
 $today = [DateTime]::UtcNow.Date
 $year = $today.Year
 $from = $today.AddYears(-1).AddDays(1).ToString("yyyy-MM-dd'T'00:00:00'Z'")
 $to = [DateTime]::UtcNow.ToString("yyyy-MM-dd'T'HH:mm:ss'Z'")
 
-function Invoke-GraphQL($Query, $Variables) {
-    $request = @{query=$Query; variables=$Variables} | ConvertTo-Json -Depth 10 -Compress
-    $response = $request | gh api graphql --input - | ConvertFrom-Json
-    if ($LASTEXITCODE -ne 0 -or $response.errors) { throw 'Authenticated GitHub statistics could not be retrieved.' }
-    return $response.data
-}
-
-$query = @'
-query($from:DateTime!,$to:DateTime!,$yearFrom:DateTime!){
- viewer {
-  login createdAt pullRequests{totalCount} issues{totalCount}
-  repositories(first:100,ownerAffiliations:[OWNER]){pageInfo{hasNextPage endCursor} nodes{isFork isArchived stargazerCount forkCount issues(states:OPEN){totalCount}}}
-  rolling:contributionsCollection(from:$from,to:$to){totalPullRequestReviewContributions}
-  year:contributionsCollection(from:$yearFrom,to:$to){totalCommitContributions}
- }
- organization(login:"PinguApps"){repositories(first:100){pageInfo{hasNextPage endCursor}nodes{isFork isArchived stargazerCount forkCount issues(states:OPEN){totalCount}}}}
-}
-'@
-$data = Invoke-GraphQL $query @{from=$from;to=$to;yearFrom="$year-01-01T00:00:00Z"}
-if ($data.viewer.login -ne 'pingu2k4') { throw 'The statistics token must belong to pingu2k4.' }
-foreach ($actor in @($data.viewer, $data.organization)) {
-    $connection = $actor.repositories
-    $all = @($connection.nodes)
-    while ($connection.pageInfo.hasNextPage) {
-        $field = if ($actor -eq $data.viewer) { 'viewer' } else { 'organization(login:"PinguApps")' }
-        $affiliations = if ($actor -eq $data.viewer) { ',ownerAffiliations:[OWNER]' } else { '' }
-        $pageQuery = 'query($cursor:String!){' + $field + '{repositories(first:100,after:$cursor' + $affiliations + '){pageInfo{hasNextPage endCursor}nodes{isFork isArchived stargazerCount forkCount issues(states:OPEN){totalCount}}}}}'
-        $page = Invoke-GraphQL $pageQuery @{cursor=$connection.pageInfo.endCursor}
-        $connection = if ($actor -eq $data.viewer) { $page.viewer.repositories } else { $page.organization.repositories }
-        $all += @($connection.nodes)
-    }
-    $actor.repositories.nodes = $all
-}
+$owners = @(Get-Content -Raw -LiteralPath (Join-Path $PSScriptRoot 'statistics-owners.json') | ConvertFrom-Json)
+$data = Get-ProfileGitHubStatistics -AppId $env:PROFILE_STATS_APP_ID -PrivateKey $env:PROFILE_STATS_APP_PRIVATE_KEY -Owners $owners -From $from -To $to -YearFrom "$year-01-01T00:00:00Z"
 $personal = @($data.viewer.repositories.nodes | Where-Object { !$_.isFork })
 $org = @($data.organization.repositories.nodes | Where-Object { !$_.isFork })
 $active = @($org | Where-Object { !$_.isArchived }).Count
@@ -172,6 +142,6 @@ $readme = $readme -replace 'Calendar (?:snapshot|updated): \d+ \w+ \d{4}\.', ("C
 [IO.File]::WriteAllText($readmePath, $readme)
 foreach ($name in $documents.Keys) { [IO.File]::WriteAllText((Join-Path $output $name), $documents[$name].OuterXml) }
 [IO.File]::WriteAllText($calendarPath, ($calendar | ConvertTo-Json -Depth 8))
-$summary = "Refreshed $($calendar.end): $(Format-Count $calendar.lifetime) all-time contributions; $(Format-Count $calendar.annual) in the last year. Account/repository/package metrics also refreshed."
+$summary = "Refreshed $($calendar.end): $(Format-Count $calendar.lifetime) all-time contributions; $(Format-Count $calendar.annual) in the last year. Account/repository/package metrics also refreshed. Private account activity owners: $($owners -join ', ')."
 Write-Output $summary
 if ($env:GITHUB_STEP_SUMMARY) { Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY -Value $summary }

@@ -111,6 +111,8 @@ AI is central to my day-to-day engineering. I use **Codex, Claude and T3 Code** 
 
 Activity across my profile and PinguApps, including private GitHub contributions. Work hosted on Azure DevOps isn't included.
 
+Account activity totals include public activity and private activity in my account, PinguApps, OmniaBI, PinguAppsPlayground and Pink-Pixel. Contribution charts include the anonymized private counts shared on my GitHub profile.
+
 <p align="center">
   <picture>
     <source media="(max-width: 520px)" srcset="assets/cards/combined-weekly-mobile.svg" />
@@ -132,7 +134,7 @@ Activity across my profile and PinguApps, including private GitHub contributions
   </picture>
 </p>
 
-Calendar updated: 21 October 2026. Account, repository and package statistics refresh daily.
+Calendar updated: 22 October 2026. Account, repository and package statistics refresh daily.
 
 ## Get in touch
 
