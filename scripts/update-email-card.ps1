@@ -44,7 +44,7 @@ $step = 468 / $weeks.Count
 $bars = [Text.StringBuilder]::new()
 $i = 0
 foreach ($week in $weeks.GetEnumerator()) {
-    $height = $week.Value / $maximum * 66
+    $height = $week.Value / $maximum * 62
     $x = Format-Coordinate (48 + $i * $step)
     $y = Format-Coordinate (194 - $height)
     $width = Format-Coordinate ($step * 0.75)
@@ -69,16 +69,17 @@ $svg = @"
     <g font-size="26" font-weight="700" fill="#F1F1F3">
       <text x="24" y="43">$downloads</text><text x="194" y="43">$packages</text><text x="364" y="43">$lifetime</text>
     </g>
-    <g font-size="11" fill="#A4A4AE">
-      <text x="24" y="64">NuGet downloads</text><text x="194" y="64">Published packages</text>
-      <text x="364" y="64">GitHub contributions</text><text x="364" y="80">All-time</text>
-      <text x="24" y="108" fill="#F1F1F3">Weekly GitHub contributions · past year</text>
+    <g font-size="18" fill="#A4A4AE">
+      <text x="24" y="66">NuGet</text><text x="24" y="87">downloads</text>
+      <text x="194" y="66">Published</text><text x="194" y="87">packages</text>
+      <text x="364" y="66" font-size="16">All-time GitHub</text><text x="364" y="87">contributions</text>
+      <text x="24" y="115" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
     </g>
-    <path d="M48 128H516M48 194H516" fill="none" stroke="#352027"/>
-    <g font-size="9" fill="#A4A4AE" text-anchor="end"><text x="41" y="132">$maximum</text><text x="41" y="198">0</text></g>
+    <path d="M48 132H516M48 194H516" fill="none" stroke="#352027"/>
+    <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="137">$maximum</text><text x="41" y="199">0</text></g>
     <g fill="#EF4444">$bars</g>
-    <g font-size="10" fill="#A4A4AE"><text x="48" y="212">$first</text><text x="516" y="212" text-anchor="end">$last</text>
-      <text x="24" y="235">Updated $updated UTC · Includes shared private activity</text>
+    <g font-size="16" fill="#A4A4AE"><text x="48" y="214">$first</text><text x="516" y="214" text-anchor="end">$last</text>
+      <text x="24" y="237" font-size="18">Updated $updated UTC</text>
     </g>
   </g>
 </svg>
