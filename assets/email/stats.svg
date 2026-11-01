@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="540" height="246" viewBox="0 0 540 246" role="img" aria-labelledby="title desc">
   <title id="title">PinguApps | Packages and GitHub activity</title>
-  <desc id="desc">143,104 NuGet downloads across 19 published packages. 16,242 all-time GitHub profile contributions, including shared private counts. 6,292 contributions from 2 Nov 2025 to 1 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 1 Nov 2026 UTC.</desc>
+  <desc id="desc">143,104 NuGet downloads across 19 published packages. 16,245 all-time GitHub profile contributions, including shared private counts. 6,295 contributions from 2 Nov 2025 to 1 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 1 Nov 2026 UTC.</desc>
   <rect x=".5" y=".5" width="539" height="245" rx="12" fill="#101014" stroke="#352027"/>
   <path d="M12.5 .5A12 12 0 0 0 .5 12.5V233.5A12 12 0 0 0 12.5 245.5C8.5 245.5 6.5 240 6.5 233.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
     <g font-size="26" font-weight="700" fill="#F1F1F3">
-      <text x="24" y="43">143,104</text><text x="194" y="43">19</text><text x="364" y="43">16,242</text>
+      <text x="24" y="43">143,104</text><text x="194" y="43">19</text><text x="364" y="43">16,245</text>
     </g>
     <g font-size="18" fill="#A4A4AE">
       <text x="24" y="66">NuGet</text><text x="24" y="87">downloads</text>
@@ -67,7 +67,7 @@
 <rect class="week-bar" x="480.679" y="138.613" width="6.623" height="55.387" rx="1" data-date="2026-10-05" data-count="536"><title>Week of 2026-10-05: 536 contributions</title></rect>
 <rect class="week-bar" x="489.509" y="145.123" width="6.623" height="48.877" rx="1" data-date="2026-10-12" data-count="473"><title>Week of 2026-10-12: 473 contributions</title></rect>
 <rect class="week-bar" x="498.34" y="132.93" width="6.623" height="61.07" rx="1" data-date="2026-10-19" data-count="591"><title>Week of 2026-10-19: 591 contributions</title></rect>
-<rect class="week-bar" x="507.17" y="142.953" width="6.623" height="51.047" rx="1" data-date="2026-10-26" data-count="494"><title>Week of 2026-10-26: 494 contributions</title></rect>
+<rect class="week-bar" x="507.17" y="142.643" width="6.623" height="51.357" rx="1" data-date="2026-10-26" data-count="497"><title>Week of 2026-10-26: 497 contributions</title></rect>
 </g>
     <g font-size="16" fill="#A4A4AE"><text x="48" y="214">2 Nov 2025</text><text x="516" y="214" text-anchor="end">1 Nov 2026</text>
       <text x="24" y="237" font-size="18">Updated 1 Nov 2026 UTC</text>
