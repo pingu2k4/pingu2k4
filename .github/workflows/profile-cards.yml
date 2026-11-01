@@ -31,7 +31,9 @@ jobs:
 
       - name: Verify profile card generation
         shell: pwsh
-        run: ./scripts/test-profile-cards.ps1
+        run: |
+          ./scripts/test-profile-cards.ps1
+          ./scripts/test-email-card.ps1
 
       - name: Fetch complete NuGet gallery totals
         shell: pwsh
@@ -50,12 +52,23 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: ./scripts/update-project-cards.ps1 -NuGetStatsPath "$env:RUNNER_TEMP/nuget.json"
 
+      - name: Generate email statistics card
+        shell: pwsh
+        run: |
+          ./scripts/update-email-card.ps1 -NuGetStatsPath "$env:RUNNER_TEMP/nuget.json"
+          $node = (Get-Command node).Source
+          $npm = (Get-Command npm).Source
+          & $npm install --prefix "$env:RUNNER_TEMP/email-renderer" --no-save --package-lock=false --ignore-scripts --no-bin-links --no-audit --no-fund '@resvg/resvg-js@2.6.2'
+          if ($LASTEXITCODE -ne 0) { throw 'Email renderer installation failed.' }
+          & $node ./scripts/render-email-card.cjs "$env:RUNNER_TEMP/email-renderer" ./assets/email/stats.svg ./assets/email/stats.png
+          if ($LASTEXITCODE -ne 0) { throw 'Email PNG rendering failed.' }
+
       - name: Commit updated cards
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/cards/*.svg assets/projects/*.svg scripts/activity-calendar.json README.md
+          git add assets/cards/*.svg assets/projects/*.svg assets/email/stats.svg assets/email/stats.png scripts/activity-calendar.json README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update profile cards"
             git push
