@@ -33,7 +33,7 @@ $weeks = [ordered]@{}
 for ($i = 0; $i -lt $calendar.days.Count; $i++) {
     $day = $calendar.days[$i]
     $date = $start.AddDays($i)
-    if ($day.date -ne $date.ToString('yyyy-MM-dd') -or $null -eq $day.count -or $day.count -lt 0) {
+    if (!$day.PSObject.Properties['count'] -or $day.date -ne $date.ToString('yyyy-MM-dd') -or $null -eq $day.count -or $day.count -lt 0) {
         throw 'Invalid contribution day in the email card.'
     }
     $monday = $date.AddDays(-(([int]$date.DayOfWeek + 6) % 7)).ToString('yyyy-MM-dd')

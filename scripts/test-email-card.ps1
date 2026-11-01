@@ -32,13 +32,19 @@ try {
     Assert-Equal (($bars | ForEach-Object { [long]$_.GetAttribute('data-count') } | Measure-Object -Sum).Sum) 366 'Graph must account for every rolling-year contribution once'
     $before = [IO.File]::ReadAllText($destination)
     # Fail closed instead of publishing a plausible but stale or incomplete image.
-    foreach ($scenario in @('missing-day','duplicate-day','wrong-total','stale-input')) {
+    foreach ($scenario in @('missing-day','duplicate-day','wrong-total','stale-input','missing-count')) {
         $invalid = $calendar | ConvertTo-Json -Depth 5 | ConvertFrom-Json
         switch ($scenario) {
             'missing-day' { $invalid.days = @($invalid.days | Select-Object -Skip 1) }
             'duplicate-day' { $invalid.days[1].date = $invalid.days[0].date }
             'wrong-total' { $invalid.annual++ }
             'stale-input' { $invalid.capturedAt = '2029-01-07T10:00:00Z' }
+            'missing-count' {
+                # Dropping a zero-valued field must not become PowerShell's intrinsic Count=1.
+                $invalid.days[0].count = 0
+                $invalid.annual--
+                $invalid.days[0].PSObject.Properties.Remove('count')
+            }
         }
         $invalid | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $calendarPath
         $failed = $false
