@@ -1,76 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="540" height="246" viewBox="0 0 540 246" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="276" viewBox="0 0 540 276" role="img" aria-labelledby="title desc">
   <title id="title">PinguApps | Packages and GitHub activity</title>
   <desc id="desc">143,104 NuGet downloads across 19 published packages. 16,245 all-time GitHub profile contributions, including shared private counts. 6,295 contributions from 2 Nov 2025 to 1 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 1 Nov 2026 UTC.</desc>
-  <rect x=".5" y=".5" width="539" height="245" rx="12" fill="#101014" stroke="#352027"/>
-  <path d="M12.5 .5A12 12 0 0 0 .5 12.5V233.5A12 12 0 0 0 12.5 245.5C8.5 245.5 6.5 240 6.5 233.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
+  <rect x=".5" y=".5" width="539" height="275" rx="12" fill="#181413" stroke="#352027"/>
+  <path d="M12.5 .5A12 12 0 0 0 .5 12.5V263.5A12 12 0 0 0 12.5 275.5C8.5 275.5 6.5 270 6.5 263.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
-    <g font-size="26" font-weight="700" fill="#F1F1F3">
-      <text x="24" y="43">143,104</text><text x="194" y="43">19</text><text x="364" y="43">16,245</text>
+    <g font-size="26" font-weight="700" fill="#F1F1F3" text-anchor="middle">
+      <text x="106" y="43">143,104</text><text x="270" y="43">19</text><text x="434" y="43">16,245</text>
     </g>
-    <g font-size="18" fill="#A4A4AE">
-      <text x="24" y="66">NuGet</text><text x="24" y="87">downloads</text>
-      <text x="194" y="66">Published</text><text x="194" y="87">packages</text>
-      <text x="364" y="66" font-size="16">All-time GitHub</text><text x="364" y="87">contributions</text>
-      <text x="24" y="115" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
+    <g font-size="14" fill="#A4A4AE" text-anchor="middle">
+      <text x="106" y="66">NuGet</text><text x="106" y="83">downloads</text>
+      <text x="270" y="66">Published</text><text x="270" y="83">packages</text>
+      <text x="434" y="66">All-time GitHub</text><text x="434" y="83">contributions</text>
     </g>
-    <path d="M48 132H516M48 194H516" fill="none" stroke="#352027"/>
-    <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="137">600</text><text x="41" y="199">0</text></g>
-    <g fill="#EF4444"><rect class="week-bar" x="48" y="193.587" width="6.623" height="0.413" rx="1" data-date="2025-10-27" data-count="4"><title>Week of 2025-10-27: 4 contributions</title></rect>
-<rect class="week-bar" x="56.83" y="192.553" width="6.623" height="1.447" rx="1" data-date="2025-11-03" data-count="14"><title>Week of 2025-11-03: 14 contributions</title></rect>
-<rect class="week-bar" x="65.66" y="181.6" width="6.623" height="12.4" rx="1" data-date="2025-11-10" data-count="120"><title>Week of 2025-11-10: 120 contributions</title></rect>
-<rect class="week-bar" x="74.491" y="187.387" width="6.623" height="6.613" rx="1" data-date="2025-11-17" data-count="64"><title>Week of 2025-11-17: 64 contributions</title></rect>
-<rect class="week-bar" x="83.321" y="191.107" width="6.623" height="2.893" rx="1" data-date="2025-11-24" data-count="28"><title>Week of 2025-11-24: 28 contributions</title></rect>
-<rect class="week-bar" x="92.151" y="184.39" width="6.623" height="9.61" rx="1" data-date="2025-12-01" data-count="93"><title>Week of 2025-12-01: 93 contributions</title></rect>
-<rect class="week-bar" x="100.981" y="184.287" width="6.623" height="9.713" rx="1" data-date="2025-12-08" data-count="94"><title>Week of 2025-12-08: 94 contributions</title></rect>
-<rect class="week-bar" x="109.811" y="189.557" width="6.623" height="4.443" rx="1" data-date="2025-12-15" data-count="43"><title>Week of 2025-12-15: 43 contributions</title></rect>
-<rect class="week-bar" x="118.642" y="188.937" width="6.623" height="5.063" rx="1" data-date="2025-12-22" data-count="49"><title>Week of 2025-12-22: 49 contributions</title></rect>
-<rect class="week-bar" x="127.472" y="188.523" width="6.623" height="5.477" rx="1" data-date="2025-12-29" data-count="53"><title>Week of 2025-12-29: 53 contributions</title></rect>
-<rect class="week-bar" x="136.302" y="192.243" width="6.623" height="1.757" rx="1" data-date="2026-01-05" data-count="17"><title>Week of 2026-01-05: 17 contributions</title></rect>
-<rect class="week-bar" x="145.132" y="191.21" width="6.623" height="2.79" rx="1" data-date="2026-01-12" data-count="27"><title>Week of 2026-01-12: 27 contributions</title></rect>
-<rect class="week-bar" x="153.962" y="192.14" width="6.623" height="1.86" rx="1" data-date="2026-01-19" data-count="18"><title>Week of 2026-01-19: 18 contributions</title></rect>
-<rect class="week-bar" x="162.792" y="192.45" width="6.623" height="1.55" rx="1" data-date="2026-01-26" data-count="15"><title>Week of 2026-01-26: 15 contributions</title></rect>
-<rect class="week-bar" x="171.623" y="193.587" width="6.623" height="0.413" rx="1" data-date="2026-02-02" data-count="4"><title>Week of 2026-02-02: 4 contributions</title></rect>
-<rect class="week-bar" x="180.453" y="193.793" width="6.623" height="0.207" rx="1" data-date="2026-02-09" data-count="2"><title>Week of 2026-02-09: 2 contributions</title></rect>
-<rect class="week-bar" x="189.283" y="194" width="6.623" height="0" rx="1" data-date="2026-02-16" data-count="0"><title>Week of 2026-02-16: 0 contributions</title></rect>
-<rect class="week-bar" x="198.113" y="193.793" width="6.623" height="0.207" rx="1" data-date="2026-02-23" data-count="2"><title>Week of 2026-02-23: 2 contributions</title></rect>
-<rect class="week-bar" x="206.943" y="194" width="6.623" height="0" rx="1" data-date="2026-03-02" data-count="0"><title>Week of 2026-03-02: 0 contributions</title></rect>
-<rect class="week-bar" x="215.774" y="193.897" width="6.623" height="0.103" rx="1" data-date="2026-03-09" data-count="1"><title>Week of 2026-03-09: 1 contributions</title></rect>
-<rect class="week-bar" x="224.604" y="191.727" width="6.623" height="2.273" rx="1" data-date="2026-03-16" data-count="22"><title>Week of 2026-03-16: 22 contributions</title></rect>
-<rect class="week-bar" x="233.434" y="191.933" width="6.623" height="2.067" rx="1" data-date="2026-03-23" data-count="20"><title>Week of 2026-03-23: 20 contributions</title></rect>
-<rect class="week-bar" x="242.264" y="187.903" width="6.623" height="6.097" rx="1" data-date="2026-03-30" data-count="59"><title>Week of 2026-03-30: 59 contributions</title></rect>
-<rect class="week-bar" x="251.094" y="189.557" width="6.623" height="4.443" rx="1" data-date="2026-04-06" data-count="43"><title>Week of 2026-04-06: 43 contributions</title></rect>
-<rect class="week-bar" x="259.925" y="190.073" width="6.623" height="3.927" rx="1" data-date="2026-04-13" data-count="38"><title>Week of 2026-04-13: 38 contributions</title></rect>
-<rect class="week-bar" x="268.755" y="192.863" width="6.623" height="1.137" rx="1" data-date="2026-04-20" data-count="11"><title>Week of 2026-04-20: 11 contributions</title></rect>
-<rect class="week-bar" x="277.585" y="187.697" width="6.623" height="6.303" rx="1" data-date="2026-04-27" data-count="61"><title>Week of 2026-04-27: 61 contributions</title></rect>
-<rect class="week-bar" x="286.415" y="170.233" width="6.623" height="23.767" rx="1" data-date="2026-05-04" data-count="230"><title>Week of 2026-05-04: 230 contributions</title></rect>
-<rect class="week-bar" x="295.245" y="155.973" width="6.623" height="38.027" rx="1" data-date="2026-05-11" data-count="368"><title>Week of 2026-05-11: 368 contributions</title></rect>
-<rect class="week-bar" x="304.075" y="186.147" width="6.623" height="7.853" rx="1" data-date="2026-05-18" data-count="76"><title>Week of 2026-05-18: 76 contributions</title></rect>
-<rect class="week-bar" x="312.906" y="191.623" width="6.623" height="2.377" rx="1" data-date="2026-05-25" data-count="23"><title>Week of 2026-05-25: 23 contributions</title></rect>
-<rect class="week-bar" x="321.736" y="183.977" width="6.623" height="10.023" rx="1" data-date="2026-06-01" data-count="97"><title>Week of 2026-06-01: 97 contributions</title></rect>
-<rect class="week-bar" x="330.566" y="180.67" width="6.623" height="13.33" rx="1" data-date="2026-06-08" data-count="129"><title>Week of 2026-06-08: 129 contributions</title></rect>
-<rect class="week-bar" x="339.396" y="188.523" width="6.623" height="5.477" rx="1" data-date="2026-06-15" data-count="53"><title>Week of 2026-06-15: 53 contributions</title></rect>
-<rect class="week-bar" x="348.226" y="184.803" width="6.623" height="9.197" rx="1" data-date="2026-06-22" data-count="89"><title>Week of 2026-06-22: 89 contributions</title></rect>
-<rect class="week-bar" x="357.057" y="185.733" width="6.623" height="8.267" rx="1" data-date="2026-06-29" data-count="80"><title>Week of 2026-06-29: 80 contributions</title></rect>
-<rect class="week-bar" x="365.887" y="183.977" width="6.623" height="10.023" rx="1" data-date="2026-07-06" data-count="97"><title>Week of 2026-07-06: 97 contributions</title></rect>
-<rect class="week-bar" x="374.717" y="175.503" width="6.623" height="18.497" rx="1" data-date="2026-07-13" data-count="179"><title>Week of 2026-07-13: 179 contributions</title></rect>
-<rect class="week-bar" x="383.547" y="184.287" width="6.623" height="9.713" rx="1" data-date="2026-07-20" data-count="94"><title>Week of 2026-07-20: 94 contributions</title></rect>
-<rect class="week-bar" x="392.377" y="188.11" width="6.623" height="5.89" rx="1" data-date="2026-07-27" data-count="57"><title>Week of 2026-07-27: 57 contributions</title></rect>
-<rect class="week-bar" x="401.208" y="191.313" width="6.623" height="2.687" rx="1" data-date="2026-08-03" data-count="26"><title>Week of 2026-08-03: 26 contributions</title></rect>
-<rect class="week-bar" x="410.038" y="181.6" width="6.623" height="12.4" rx="1" data-date="2026-08-10" data-count="120"><title>Week of 2026-08-10: 120 contributions</title></rect>
-<rect class="week-bar" x="418.868" y="184.803" width="6.623" height="9.197" rx="1" data-date="2026-08-17" data-count="89"><title>Week of 2026-08-17: 89 contributions</title></rect>
-<rect class="week-bar" x="427.698" y="188.317" width="6.623" height="5.683" rx="1" data-date="2026-08-24" data-count="55"><title>Week of 2026-08-24: 55 contributions</title></rect>
-<rect class="week-bar" x="436.528" y="183.357" width="6.623" height="10.643" rx="1" data-date="2026-08-31" data-count="103"><title>Week of 2026-08-31: 103 contributions</title></rect>
-<rect class="week-bar" x="445.358" y="161.657" width="6.623" height="32.343" rx="1" data-date="2026-09-07" data-count="313"><title>Week of 2026-09-07: 313 contributions</title></rect>
-<rect class="week-bar" x="454.189" y="164.137" width="6.623" height="29.863" rx="1" data-date="2026-09-14" data-count="289"><title>Week of 2026-09-14: 289 contributions</title></rect>
-<rect class="week-bar" x="463.019" y="160.003" width="6.623" height="33.997" rx="1" data-date="2026-09-21" data-count="329"><title>Week of 2026-09-21: 329 contributions</title></rect>
-<rect class="week-bar" x="471.849" y="152.667" width="6.623" height="41.333" rx="1" data-date="2026-09-28" data-count="400"><title>Week of 2026-09-28: 400 contributions</title></rect>
-<rect class="week-bar" x="480.679" y="138.613" width="6.623" height="55.387" rx="1" data-date="2026-10-05" data-count="536"><title>Week of 2026-10-05: 536 contributions</title></rect>
-<rect class="week-bar" x="489.509" y="145.123" width="6.623" height="48.877" rx="1" data-date="2026-10-12" data-count="473"><title>Week of 2026-10-12: 473 contributions</title></rect>
-<rect class="week-bar" x="498.34" y="132.93" width="6.623" height="61.07" rx="1" data-date="2026-10-19" data-count="591"><title>Week of 2026-10-19: 591 contributions</title></rect>
-<rect class="week-bar" x="507.17" y="142.643" width="6.623" height="51.357" rx="1" data-date="2026-10-26" data-count="497"><title>Week of 2026-10-26: 497 contributions</title></rect>
+    <text x="24" y="127" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
+    <path d="M48 146H516M48 208H516" fill="none" stroke="#352027"/>
+    <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="151">600</text><text x="41" y="213">0</text></g>
+    <g fill="#EF4444"><rect class="week-bar" x="48" y="207.587" width="6.623" height="0.413" rx="1" data-date="2025-10-27" data-count="4"><title>Week of 2025-10-27: 4 contributions</title></rect>
+<rect class="week-bar" x="56.83" y="206.553" width="6.623" height="1.447" rx="1" data-date="2025-11-03" data-count="14"><title>Week of 2025-11-03: 14 contributions</title></rect>
+<rect class="week-bar" x="65.66" y="195.6" width="6.623" height="12.4" rx="1" data-date="2025-11-10" data-count="120"><title>Week of 2025-11-10: 120 contributions</title></rect>
+<rect class="week-bar" x="74.491" y="201.387" width="6.623" height="6.613" rx="1" data-date="2025-11-17" data-count="64"><title>Week of 2025-11-17: 64 contributions</title></rect>
+<rect class="week-bar" x="83.321" y="205.107" width="6.623" height="2.893" rx="1" data-date="2025-11-24" data-count="28"><title>Week of 2025-11-24: 28 contributions</title></rect>
+<rect class="week-bar" x="92.151" y="198.39" width="6.623" height="9.61" rx="1" data-date="2025-12-01" data-count="93"><title>Week of 2025-12-01: 93 contributions</title></rect>
+<rect class="week-bar" x="100.981" y="198.287" width="6.623" height="9.713" rx="1" data-date="2025-12-08" data-count="94"><title>Week of 2025-12-08: 94 contributions</title></rect>
+<rect class="week-bar" x="109.811" y="203.557" width="6.623" height="4.443" rx="1" data-date="2025-12-15" data-count="43"><title>Week of 2025-12-15: 43 contributions</title></rect>
+<rect class="week-bar" x="118.642" y="202.937" width="6.623" height="5.063" rx="1" data-date="2025-12-22" data-count="49"><title>Week of 2025-12-22: 49 contributions</title></rect>
+<rect class="week-bar" x="127.472" y="202.523" width="6.623" height="5.477" rx="1" data-date="2025-12-29" data-count="53"><title>Week of 2025-12-29: 53 contributions</title></rect>
+<rect class="week-bar" x="136.302" y="206.243" width="6.623" height="1.757" rx="1" data-date="2026-01-05" data-count="17"><title>Week of 2026-01-05: 17 contributions</title></rect>
+<rect class="week-bar" x="145.132" y="205.21" width="6.623" height="2.79" rx="1" data-date="2026-01-12" data-count="27"><title>Week of 2026-01-12: 27 contributions</title></rect>
+<rect class="week-bar" x="153.962" y="206.14" width="6.623" height="1.86" rx="1" data-date="2026-01-19" data-count="18"><title>Week of 2026-01-19: 18 contributions</title></rect>
+<rect class="week-bar" x="162.792" y="206.45" width="6.623" height="1.55" rx="1" data-date="2026-01-26" data-count="15"><title>Week of 2026-01-26: 15 contributions</title></rect>
+<rect class="week-bar" x="171.623" y="207.587" width="6.623" height="0.413" rx="1" data-date="2026-02-02" data-count="4"><title>Week of 2026-02-02: 4 contributions</title></rect>
+<rect class="week-bar" x="180.453" y="207.793" width="6.623" height="0.207" rx="1" data-date="2026-02-09" data-count="2"><title>Week of 2026-02-09: 2 contributions</title></rect>
+<rect class="week-bar" x="189.283" y="208" width="6.623" height="0" rx="1" data-date="2026-02-16" data-count="0"><title>Week of 2026-02-16: 0 contributions</title></rect>
+<rect class="week-bar" x="198.113" y="207.793" width="6.623" height="0.207" rx="1" data-date="2026-02-23" data-count="2"><title>Week of 2026-02-23: 2 contributions</title></rect>
+<rect class="week-bar" x="206.943" y="208" width="6.623" height="0" rx="1" data-date="2026-03-02" data-count="0"><title>Week of 2026-03-02: 0 contributions</title></rect>
+<rect class="week-bar" x="215.774" y="207.897" width="6.623" height="0.103" rx="1" data-date="2026-03-09" data-count="1"><title>Week of 2026-03-09: 1 contributions</title></rect>
+<rect class="week-bar" x="224.604" y="205.727" width="6.623" height="2.273" rx="1" data-date="2026-03-16" data-count="22"><title>Week of 2026-03-16: 22 contributions</title></rect>
+<rect class="week-bar" x="233.434" y="205.933" width="6.623" height="2.067" rx="1" data-date="2026-03-23" data-count="20"><title>Week of 2026-03-23: 20 contributions</title></rect>
+<rect class="week-bar" x="242.264" y="201.903" width="6.623" height="6.097" rx="1" data-date="2026-03-30" data-count="59"><title>Week of 2026-03-30: 59 contributions</title></rect>
+<rect class="week-bar" x="251.094" y="203.557" width="6.623" height="4.443" rx="1" data-date="2026-04-06" data-count="43"><title>Week of 2026-04-06: 43 contributions</title></rect>
+<rect class="week-bar" x="259.925" y="204.073" width="6.623" height="3.927" rx="1" data-date="2026-04-13" data-count="38"><title>Week of 2026-04-13: 38 contributions</title></rect>
+<rect class="week-bar" x="268.755" y="206.863" width="6.623" height="1.137" rx="1" data-date="2026-04-20" data-count="11"><title>Week of 2026-04-20: 11 contributions</title></rect>
+<rect class="week-bar" x="277.585" y="201.697" width="6.623" height="6.303" rx="1" data-date="2026-04-27" data-count="61"><title>Week of 2026-04-27: 61 contributions</title></rect>
+<rect class="week-bar" x="286.415" y="184.233" width="6.623" height="23.767" rx="1" data-date="2026-05-04" data-count="230"><title>Week of 2026-05-04: 230 contributions</title></rect>
+<rect class="week-bar" x="295.245" y="169.973" width="6.623" height="38.027" rx="1" data-date="2026-05-11" data-count="368"><title>Week of 2026-05-11: 368 contributions</title></rect>
+<rect class="week-bar" x="304.075" y="200.147" width="6.623" height="7.853" rx="1" data-date="2026-05-18" data-count="76"><title>Week of 2026-05-18: 76 contributions</title></rect>
+<rect class="week-bar" x="312.906" y="205.623" width="6.623" height="2.377" rx="1" data-date="2026-05-25" data-count="23"><title>Week of 2026-05-25: 23 contributions</title></rect>
+<rect class="week-bar" x="321.736" y="197.977" width="6.623" height="10.023" rx="1" data-date="2026-06-01" data-count="97"><title>Week of 2026-06-01: 97 contributions</title></rect>
+<rect class="week-bar" x="330.566" y="194.67" width="6.623" height="13.33" rx="1" data-date="2026-06-08" data-count="129"><title>Week of 2026-06-08: 129 contributions</title></rect>
+<rect class="week-bar" x="339.396" y="202.523" width="6.623" height="5.477" rx="1" data-date="2026-06-15" data-count="53"><title>Week of 2026-06-15: 53 contributions</title></rect>
+<rect class="week-bar" x="348.226" y="198.803" width="6.623" height="9.197" rx="1" data-date="2026-06-22" data-count="89"><title>Week of 2026-06-22: 89 contributions</title></rect>
+<rect class="week-bar" x="357.057" y="199.733" width="6.623" height="8.267" rx="1" data-date="2026-06-29" data-count="80"><title>Week of 2026-06-29: 80 contributions</title></rect>
+<rect class="week-bar" x="365.887" y="197.977" width="6.623" height="10.023" rx="1" data-date="2026-07-06" data-count="97"><title>Week of 2026-07-06: 97 contributions</title></rect>
+<rect class="week-bar" x="374.717" y="189.503" width="6.623" height="18.497" rx="1" data-date="2026-07-13" data-count="179"><title>Week of 2026-07-13: 179 contributions</title></rect>
+<rect class="week-bar" x="383.547" y="198.287" width="6.623" height="9.713" rx="1" data-date="2026-07-20" data-count="94"><title>Week of 2026-07-20: 94 contributions</title></rect>
+<rect class="week-bar" x="392.377" y="202.11" width="6.623" height="5.89" rx="1" data-date="2026-07-27" data-count="57"><title>Week of 2026-07-27: 57 contributions</title></rect>
+<rect class="week-bar" x="401.208" y="205.313" width="6.623" height="2.687" rx="1" data-date="2026-08-03" data-count="26"><title>Week of 2026-08-03: 26 contributions</title></rect>
+<rect class="week-bar" x="410.038" y="195.6" width="6.623" height="12.4" rx="1" data-date="2026-08-10" data-count="120"><title>Week of 2026-08-10: 120 contributions</title></rect>
+<rect class="week-bar" x="418.868" y="198.803" width="6.623" height="9.197" rx="1" data-date="2026-08-17" data-count="89"><title>Week of 2026-08-17: 89 contributions</title></rect>
+<rect class="week-bar" x="427.698" y="202.317" width="6.623" height="5.683" rx="1" data-date="2026-08-24" data-count="55"><title>Week of 2026-08-24: 55 contributions</title></rect>
+<rect class="week-bar" x="436.528" y="197.357" width="6.623" height="10.643" rx="1" data-date="2026-08-31" data-count="103"><title>Week of 2026-08-31: 103 contributions</title></rect>
+<rect class="week-bar" x="445.358" y="175.657" width="6.623" height="32.343" rx="1" data-date="2026-09-07" data-count="313"><title>Week of 2026-09-07: 313 contributions</title></rect>
+<rect class="week-bar" x="454.189" y="178.137" width="6.623" height="29.863" rx="1" data-date="2026-09-14" data-count="289"><title>Week of 2026-09-14: 289 contributions</title></rect>
+<rect class="week-bar" x="463.019" y="174.003" width="6.623" height="33.997" rx="1" data-date="2026-09-21" data-count="329"><title>Week of 2026-09-21: 329 contributions</title></rect>
+<rect class="week-bar" x="471.849" y="166.667" width="6.623" height="41.333" rx="1" data-date="2026-09-28" data-count="400"><title>Week of 2026-09-28: 400 contributions</title></rect>
+<rect class="week-bar" x="480.679" y="152.613" width="6.623" height="55.387" rx="1" data-date="2026-10-05" data-count="536"><title>Week of 2026-10-05: 536 contributions</title></rect>
+<rect class="week-bar" x="489.509" y="159.123" width="6.623" height="48.877" rx="1" data-date="2026-10-12" data-count="473"><title>Week of 2026-10-12: 473 contributions</title></rect>
+<rect class="week-bar" x="498.34" y="146.93" width="6.623" height="61.07" rx="1" data-date="2026-10-19" data-count="591"><title>Week of 2026-10-19: 591 contributions</title></rect>
+<rect class="week-bar" x="507.17" y="156.643" width="6.623" height="51.357" rx="1" data-date="2026-10-26" data-count="497"><title>Week of 2026-10-26: 497 contributions</title></rect>
 </g>
-    <g font-size="16" fill="#A4A4AE"><text x="48" y="214">2 Nov 2025</text><text x="516" y="214" text-anchor="end">1 Nov 2026</text>
-      <text x="24" y="237" font-size="18">Updated 1 Nov 2026 UTC</text>
+    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">2 Nov 2025</text><text x="516" y="228" text-anchor="end">1 Nov 2026</text>
+      <text x="24" y="262">Updated 1 Nov 2026 UTC</text>
     </g>
   </g>
 </svg>

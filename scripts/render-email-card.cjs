@@ -7,7 +7,7 @@ const source = resolve(process.argv[3]);
 const destination = resolve(process.argv[4]);
 const svg = readFileSync(source);
 const png = new Resvg(svg, { fitTo: { mode: 'zoom', value: 2 } }).render();
-if (png.width !== 1080 || png.height !== 492) throw new Error('Unexpected email card dimensions.');
+if (png.width !== 1080 || png.height !== 552) throw new Error('Unexpected email card dimensions.');
 writeFileSync(`${destination}.tmp`, png.asPng());
 renameSync(`${destination}.tmp`, destination);
 console.log(`Rendered ${destination}: ${png.width} x ${png.height}`);
