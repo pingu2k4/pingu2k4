@@ -46,7 +46,7 @@ $i = 0
 foreach ($week in $weeks.GetEnumerator()) {
     $height = $week.Value / $maximum * 62
     $x = Format-Coordinate (48 + $i * $step)
-    $y = Format-Coordinate (194 - $height)
+    $y = Format-Coordinate (208 - $height)
     $width = Format-Coordinate ($step * 0.75)
     $h = Format-Coordinate $height
     [void]$bars.AppendLine("<rect class=`"week-bar`" x=`"$x`" y=`"$y`" width=`"$width`" height=`"$h`" rx=`"1`" data-date=`"$($week.Key)`" data-count=`"$($week.Value)`"><title>Week of $($week.Key): $($week.Value) contributions</title></rect>")
@@ -60,26 +60,26 @@ $updated = $end.ToString('d MMM yyyy', $culture)
 $first = $start.ToString('d MMM yyyy', $culture)
 $last = $end.ToString('d MMM yyyy', $culture)
 $svg = @"
-<svg xmlns="http://www.w3.org/2000/svg" width="540" height="246" viewBox="0 0 540 246" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="276" viewBox="0 0 540 276" role="img" aria-labelledby="title desc">
   <title id="title">PinguApps | Packages and GitHub activity</title>
   <desc id="desc">$downloads NuGet downloads across $packages published packages. $lifetime all-time GitHub profile contributions, including shared private counts. $annual contributions from $first to $last, grouped into Monday-start weeks; boundary weeks may be partial. Updated $updated UTC.</desc>
-  <rect x=".5" y=".5" width="539" height="245" rx="12" fill="#101014" stroke="#352027"/>
-  <path d="M12.5 .5A12 12 0 0 0 .5 12.5V233.5A12 12 0 0 0 12.5 245.5C8.5 245.5 6.5 240 6.5 233.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
+  <rect x=".5" y=".5" width="539" height="275" rx="12" fill="#181413" stroke="#352027"/>
+  <path d="M12.5 .5A12 12 0 0 0 .5 12.5V263.5A12 12 0 0 0 12.5 275.5C8.5 275.5 6.5 270 6.5 263.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
-    <g font-size="26" font-weight="700" fill="#F1F1F3">
-      <text x="24" y="43">$downloads</text><text x="194" y="43">$packages</text><text x="364" y="43">$lifetime</text>
+    <g font-size="26" font-weight="700" fill="#F1F1F3" text-anchor="middle">
+      <text x="106" y="43">$downloads</text><text x="270" y="43">$packages</text><text x="434" y="43">$lifetime</text>
     </g>
-    <g font-size="18" fill="#A4A4AE">
-      <text x="24" y="66">NuGet</text><text x="24" y="87">downloads</text>
-      <text x="194" y="66">Published</text><text x="194" y="87">packages</text>
-      <text x="364" y="66" font-size="16">All-time GitHub</text><text x="364" y="87">contributions</text>
-      <text x="24" y="115" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
+    <g font-size="14" fill="#A4A4AE" text-anchor="middle">
+      <text x="106" y="66">NuGet</text><text x="106" y="83">downloads</text>
+      <text x="270" y="66">Published</text><text x="270" y="83">packages</text>
+      <text x="434" y="66">All-time GitHub</text><text x="434" y="83">contributions</text>
     </g>
-    <path d="M48 132H516M48 194H516" fill="none" stroke="#352027"/>
-    <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="137">$maximum</text><text x="41" y="199">0</text></g>
+    <text x="24" y="127" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
+    <path d="M48 146H516M48 208H516" fill="none" stroke="#352027"/>
+    <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="151">$maximum</text><text x="41" y="213">0</text></g>
     <g fill="#EF4444">$bars</g>
-    <g font-size="16" fill="#A4A4AE"><text x="48" y="214">$first</text><text x="516" y="214" text-anchor="end">$last</text>
-      <text x="24" y="237" font-size="18">Updated $updated UTC</text>
+    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">$first</text><text x="516" y="228" text-anchor="end">$last</text>
+      <text x="24" y="262">Updated $updated UTC</text>
     </g>
   </g>
 </svg>
