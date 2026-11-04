@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="540" height="276" viewBox="0 0 540 276" role="img" aria-labelledby="title desc">
   <title id="title">PinguApps | Packages and GitHub activity</title>
-  <desc id="desc">144,740 NuGet downloads across 19 published packages. 16,531 all-time GitHub profile contributions, including shared private counts. 6,575 contributions from 4 Nov 2025 to 3 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 3 Nov 2026 UTC.</desc>
+  <desc id="desc">145,666 NuGet downloads across 19 published packages. 16,581 all-time GitHub profile contributions, including shared private counts. 6,623 contributions from 5 Nov 2025 to 4 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 4 Nov 2026 UTC.</desc>
   <rect x=".5" y=".5" width="539" height="275" rx="12" fill="#181413" stroke="#352027"/>
   <path d="M12.5 .5A12 12 0 0 0 .5 12.5V263.5A12 12 0 0 0 12.5 275.5C8.5 275.5 6.5 270 6.5 263.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
     <g font-size="26" font-weight="700" fill="#F1F1F3" text-anchor="middle">
-      <text x="106" y="43">144,740</text><text x="270" y="43">19</text><text x="434" y="43">16,531</text>
+      <text x="106" y="43">145,666</text><text x="270" y="43">19</text><text x="434" y="43">16,581</text>
     </g>
     <g font-size="14" fill="#A4A4AE" text-anchor="middle">
       <text x="106" y="66">NuGet</text><text x="106" y="83">downloads</text>
@@ -15,7 +15,7 @@
     <text x="24" y="127" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
     <path d="M48 146H516M48 208H516" fill="none" stroke="#352027"/>
     <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="151">600</text><text x="41" y="213">0</text></g>
-    <g fill="#EF4444"><rect class="week-bar" x="48" y="206.76" width="6.623" height="1.24" rx="1" data-date="2025-11-03" data-count="12"><title>Week of 2025-11-03: 12 contributions</title></rect>
+    <g fill="#EF4444"><rect class="week-bar" x="48" y="206.967" width="6.623" height="1.033" rx="1" data-date="2025-11-03" data-count="10"><title>Week of 2025-11-03: 10 contributions</title></rect>
 <rect class="week-bar" x="56.83" y="195.6" width="6.623" height="12.4" rx="1" data-date="2025-11-10" data-count="120"><title>Week of 2025-11-10: 120 contributions</title></rect>
 <rect class="week-bar" x="65.66" y="201.387" width="6.623" height="6.613" rx="1" data-date="2025-11-17" data-count="64"><title>Week of 2025-11-17: 64 contributions</title></rect>
 <rect class="week-bar" x="74.491" y="205.107" width="6.623" height="2.893" rx="1" data-date="2025-11-24" data-count="28"><title>Week of 2025-11-24: 28 contributions</title></rect>
@@ -67,10 +67,10 @@
 <rect class="week-bar" x="480.679" y="159.123" width="6.623" height="48.877" rx="1" data-date="2026-10-12" data-count="473"><title>Week of 2026-10-12: 473 contributions</title></rect>
 <rect class="week-bar" x="489.509" y="146.93" width="6.623" height="61.07" rx="1" data-date="2026-10-19" data-count="591"><title>Week of 2026-10-19: 591 contributions</title></rect>
 <rect class="week-bar" x="498.34" y="146.103" width="6.623" height="61.897" rx="1" data-date="2026-10-26" data-count="599"><title>Week of 2026-10-26: 599 contributions</title></rect>
-<rect class="week-bar" x="507.17" y="188.987" width="6.623" height="19.013" rx="1" data-date="2026-11-02" data-count="184"><title>Week of 2026-11-02: 184 contributions</title></rect>
+<rect class="week-bar" x="507.17" y="183.82" width="6.623" height="24.18" rx="1" data-date="2026-11-02" data-count="234"><title>Week of 2026-11-02: 234 contributions</title></rect>
 </g>
-    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">4 Nov 2025</text><text x="516" y="228" text-anchor="end">3 Nov 2026</text>
-      <text x="24" y="262">Updated 3 Nov 2026 UTC</text>
+    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">5 Nov 2025</text><text x="516" y="228" text-anchor="end">4 Nov 2026</text>
+      <text x="24" y="262">Updated 4 Nov 2026 UTC</text>
     </g>
   </g>
 </svg>
