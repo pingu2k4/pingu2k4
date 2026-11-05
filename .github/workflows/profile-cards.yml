@@ -34,6 +34,7 @@ jobs:
         run: |
           ./scripts/test-profile-cards.ps1
           ./scripts/test-email-card.ps1
+          ./scripts/test-light-assets.ps1
 
       - name: Fetch complete NuGet gallery totals
         shell: pwsh
@@ -63,12 +64,16 @@ jobs:
           & $node ./scripts/render-email-card.cjs "$env:RUNNER_TEMP/email-renderer" ./assets/email/stats.svg ./assets/email/stats.png
           if ($LASTEXITCODE -ne 0) { throw 'Email PNG rendering failed.' }
 
+      - name: Generate light README variants
+        shell: pwsh
+        run: ./scripts/update-light-assets.ps1
+
       - name: Commit updated cards
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/cards/*.svg assets/projects/*.svg assets/email/stats.svg assets/email/stats.png scripts/activity-calendar.json README.md
+          git add assets/hero*-light.svg assets/hero*-themed.svg assets/skills/*-light.svg assets/cards/*.svg assets/projects/*.svg assets/email/stats.svg assets/email/stats.png scripts/activity-calendar.json README.md
           if ! git diff --cached --quiet; then
             git commit -m "Update profile cards"
             git push
