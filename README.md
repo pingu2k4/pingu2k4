@@ -25,6 +25,14 @@ I'm Matthew, better known as **Pingu** — a .NET engineer and founder based in 
 
 I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**, where most of my open-source work lives. These projects reflect my work in Blazor and the wider .NET ecosystem.
 
+<p align="center">
+  <picture>
+    <source media="(max-width: 520px)" srcset="assets/cards/adoption-mobile-themed.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/cards/adoption-light.svg" />
+    <img src="assets/cards/adoption.svg" width="700" alt="Library adoption: total NuGet downloads across all my packages, published package count and active PinguApps repositories" />
+  </picture>
+</p>
+
 ### Blazor tools
 
 <p align="center">
@@ -119,14 +127,6 @@ Account activity totals include public activity and private activity in my accou
     <source media="(max-width: 520px)" srcset="assets/cards/combined-weekly-mobile-themed.svg" />
     <source media="(prefers-color-scheme: light)" srcset="assets/cards/combined-weekly-light.svg" />
     <img src="assets/cards/combined-weekly.svg" width="700" alt="Pingu and PinguApps: account and repository statistics, with weekly contribution history including private activity" />
-  </picture>
-</p>
-
-<p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="assets/cards/adoption-mobile-themed.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/adoption-light.svg" />
-    <img src="assets/cards/adoption.svg" width="700" alt="Library adoption: total NuGet downloads across all my packages, published package count and active PinguApps repositories" />
   </picture>
 </p>
 
