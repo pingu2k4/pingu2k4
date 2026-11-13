@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="540" height="276" viewBox="0 0 540 276" role="img" aria-labelledby="title desc">
   <title id="title">PinguApps | Packages and GitHub activity</title>
-  <desc id="desc">150,728 NuGet downloads across 20 published packages. 17,276 all-time GitHub profile contributions, including shared private counts. 7,302 contributions from 13 Nov 2025 to 12 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 12 Nov 2026 UTC.</desc>
+  <desc id="desc">151,661 NuGet downloads across 20 published packages. 17,329 all-time GitHub profile contributions, including shared private counts. 7,332 contributions from 14 Nov 2025 to 13 Nov 2026, grouped into Monday-start weeks; boundary weeks may be partial. Updated 13 Nov 2026 UTC.</desc>
   <rect x=".5" y=".5" width="539" height="275" rx="12" fill="#181413" stroke="#352027"/>
   <path d="M12.5 .5A12 12 0 0 0 .5 12.5V263.5A12 12 0 0 0 12.5 275.5C8.5 275.5 6.5 270 6.5 263.5V12.5C6.5 6 8.5 .5 12.5 .5Z" fill="#EF4444"/>
   <g font-family="DejaVu Sans,Arial,sans-serif">
     <g font-size="26" font-weight="700" fill="#F1F1F3" text-anchor="middle">
-      <text x="106" y="43">150,728</text><text x="270" y="43">20</text><text x="434" y="43">17,276</text>
+      <text x="106" y="43">151,661</text><text x="270" y="43">20</text><text x="434" y="43">17,329</text>
     </g>
     <g font-size="14" fill="#A4A4AE" text-anchor="middle">
       <text x="106" y="66">NuGet</text><text x="106" y="83">downloads</text>
@@ -15,7 +15,7 @@
     <text x="24" y="127" font-size="16" fill="#F1F1F3">Weekly contributions · past year</text>
     <path d="M48 146H516M48 208H516" fill="none" stroke="#352027"/>
     <g font-size="14" fill="#A4A4AE" text-anchor="end"><text x="41" y="151">600</text><text x="41" y="213">0</text></g>
-    <g fill="#EF4444"><rect class="week-bar" x="48" y="196.22" width="6.623" height="11.78" rx="1" data-date="2025-11-10" data-count="114"><title>Week of 2025-11-10: 114 contributions</title></rect>
+    <g fill="#EF4444"><rect class="week-bar" x="48" y="198.597" width="6.623" height="9.403" rx="1" data-date="2025-11-10" data-count="91"><title>Week of 2025-11-10: 91 contributions</title></rect>
 <rect class="week-bar" x="56.83" y="201.387" width="6.623" height="6.613" rx="1" data-date="2025-11-17" data-count="64"><title>Week of 2025-11-17: 64 contributions</title></rect>
 <rect class="week-bar" x="65.66" y="205.107" width="6.623" height="2.893" rx="1" data-date="2025-11-24" data-count="28"><title>Week of 2025-11-24: 28 contributions</title></rect>
 <rect class="week-bar" x="74.491" y="198.39" width="6.623" height="9.61" rx="1" data-date="2025-12-01" data-count="93"><title>Week of 2025-12-01: 93 contributions</title></rect>
@@ -67,10 +67,10 @@
 <rect class="week-bar" x="480.679" y="146.93" width="6.623" height="61.07" rx="1" data-date="2026-10-19" data-count="591"><title>Week of 2026-10-19: 591 contributions</title></rect>
 <rect class="week-bar" x="489.509" y="146.103" width="6.623" height="61.897" rx="1" data-date="2026-10-26" data-count="599"><title>Week of 2026-10-26: 599 contributions</title></rect>
 <rect class="week-bar" x="498.34" y="154.99" width="6.623" height="53.01" rx="1" data-date="2026-11-02" data-count="513"><title>Week of 2026-11-02: 513 contributions</title></rect>
-<rect class="week-bar" x="507.17" y="165.013" width="6.623" height="42.987" rx="1" data-date="2026-11-09" data-count="416"><title>Week of 2026-11-09: 416 contributions</title></rect>
+<rect class="week-bar" x="507.17" y="159.537" width="6.623" height="48.463" rx="1" data-date="2026-11-09" data-count="469"><title>Week of 2026-11-09: 469 contributions</title></rect>
 </g>
-    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">13 Nov 2025</text><text x="516" y="228" text-anchor="end">12 Nov 2026</text>
-      <text x="24" y="262">Updated 12 Nov 2026 UTC</text>
+    <g font-size="12" fill="#A4A4AE"><text x="48" y="228">14 Nov 2025</text><text x="516" y="228" text-anchor="end">13 Nov 2026</text>
+      <text x="24" y="262">Updated 13 Nov 2026 UTC</text>
     </g>
   </g>
 </svg>
