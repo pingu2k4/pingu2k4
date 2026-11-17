@@ -26,11 +26,13 @@ I'm Matthew, better known as **Pingu** — a .NET engineer and founder based in 
 I'm the **founder and sole owner of [PinguApps](https://github.com/PinguApps)**, where most of my open-source work lives. These projects reflect my work in Blazor and the wider .NET ecosystem.
 
 <p align="center">
-  <picture>
-    <source media="(max-width: 520px)" srcset="assets/cards/adoption-mobile-themed.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/cards/adoption-light.svg" />
-    <img src="assets/cards/adoption.svg" width="700" alt="Library adoption: total NuGet downloads across all my packages, published package count and active PinguApps repositories" />
-  </picture>
+  <a href="https://www.nuget.org/packages?q=owner%3Apingu2k4&amp;includeComputedFrameworks=true&amp;prerel=true&amp;sortby=created-desc">
+    <picture>
+      <source media="(max-width: 520px)" srcset="assets/cards/adoption-mobile-themed.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="assets/cards/adoption-light.svg" />
+      <img src="assets/cards/adoption.svg" width="700" alt="Library adoption: total NuGet downloads across all my packages, published package count and active PinguApps repositories" />
+    </picture>
+  </a>
 </p>
 
 ### Blazor tools
