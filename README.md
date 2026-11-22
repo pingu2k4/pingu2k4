@@ -140,7 +140,7 @@ Account activity totals include public activity and private activity in my accou
   </picture>
 </p>
 
-Calendar updated: 21 November 2026. Account, repository and package statistics refresh daily.
+Calendar updated: 22 November 2026. Account, repository and package statistics refresh daily.
 
 ## Get in touch
 
